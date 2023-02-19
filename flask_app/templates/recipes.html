@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Recipe</title>
+</head>
+<body>
+    
+    <h1>Welcome, {{user.first_name}} </h1>
+    <br>
+    <div>
+    <a href="/logout">Logout</a>
+    <a href="/welcome">Back to Recipes</a>
+    </div>
+    <br>
+    <h2>{{ recipe.name }}</h2>
+    <br>
+    <h3>Posted by: {{ recipe.owner.first_name }}</h3>
+    <br>
+    <p>Description:     {{ recipe.description }}</p>
+    <br>
+    <p>Under 30 Minutes:     {{ recipe.under_30 }}</p>
+    <br>
+    <p>Instructions:     {{ recipe.instructions }}</p>
+    <br>
+    <p>Date Made:     {{recipe.date_cooked }}</p>
+    
+</body>
+</html>
